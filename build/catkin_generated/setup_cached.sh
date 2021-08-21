@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/sahin/catkin_ws/src/vosk_ros/build/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/sahin/catkin_ws/src/vosk_ros/build/devel/lib:$LD_LIBRARY_PATH"
 export PATH='/opt/ros/kinetic/bin:/home/sahin/bin:/home/sahin/.local/bin:/usr/local/cuda-11.3/bin:/home/sahin/bin:/home/sahin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+export PKG_CONFIG_PATH="/home/sahin/catkin_ws/src/vosk_ros/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/sahin/catkin_ws/src/vosk_ros/build/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/sahin/catkin_ws/src/vosk_ros:$ROS_PACKAGE_PATH"
