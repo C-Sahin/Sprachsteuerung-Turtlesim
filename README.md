@@ -7,6 +7,7 @@
 |ROS|Kinetic Kame|
 |Python|3.9|
 |Catkin env|Python 3|
+|VOSK|XXX|
 
 
 ### Hinweise | Anmerkungen
