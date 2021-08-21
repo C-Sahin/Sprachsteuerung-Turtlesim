@@ -6,7 +6,7 @@ XXXXXX
 |Ubuntu|16.04 LTS|
 |ROS|Kinetic Kame|
 |Python|3.9|
-|Catkin env|0.7.29 with Python 3.9.4|
+|Catkin ws|0.7.29 with Python 3.9.4|
 |VOSK|XXX|
 
 
