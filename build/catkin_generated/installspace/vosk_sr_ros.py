@@ -59,7 +59,7 @@ try:
     talker()
     if args.model is None:
         args.model = "model"
-        os.chdir("/home/sahin/catkin_ws/src/vosk_ros/src") #temporary
+        os.chdir("/home/sahin/catkin_ws/src/vosk_ros/src") #temporary #TODO
     if not os.path.exists(args.model):
         print ("Please download a model for your language from https://alphacephei.com/vosk/models")
         print ("and unpack as 'model' in the current folder.")
