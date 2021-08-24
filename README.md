@@ -7,7 +7,7 @@ XXXXXX
 |ROS|Kinetic Kame|
 |Python|3.9|
 |Catkin ws|0.7.29 with Python 3.9.4|
-|VOSK|XXX|
+|VOSK|0.3.30|
 
 
 ### Hinweise | Anmerkungen
