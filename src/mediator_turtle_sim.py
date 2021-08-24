@@ -117,7 +117,7 @@ class TurtleBot:
     def __init__(self):
         # Creates a node with name 'turtlebot_controller' and make sure it is a
         # unique node (using anonymous=True).
-        rospy.init_node('Speech_Recognition_Listener_Turtle_Sim_Mediator', anonymous=True)
+        rospy.init_node('Mediator_Turtlesim', anonymous=True)
         rospy.Subscriber('result', String, callback)
         # Publisher which will publish to the topic '/turtle1/cmd_vel'.
         self.velocity_publisher = rospy.Publisher('/turtle1/cmd_vel',
@@ -196,8 +196,6 @@ class TurtleBot:
 MoveToGoalController = TurtleBot()
 
 def listener():
-
-    
     global pub 
     pub = rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=10)
     # spin() simply keeps python from exiting until this node is stopped
