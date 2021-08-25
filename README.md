@@ -1,7 +1,7 @@
 # VOSK-ROS
 VOSK-ROS ist ein ROS Package, welches im Rahmen eines Praktikums im Wintersemester 2021 an der Technischen Hochschule Georg Agricola entwickelt wurde.
-Die Aufgabe bestand darin, durch Spracherkennung, Sprache in Text umzunwandeln und, durch TextToSpeech, Text in Sprache umzuwandeln.
-Zusaetzlich sollte ein Nutzer in der Laage sein Sprachbefehle an den Turtlesim weiterzugeben, um diesen Kontrollieren zu koennen.
+Die Aufgabe bestand darin, durch Spracherkennung, Sprache in Text umzunwandeln und durch TextToSpeech, Text in Sprache umzuwandeln.
+Zusätzlich sollte ein Nutzer in der Lage sein Sprachbefehle an den Turtlesim weiterzugeben, um diesen Kontrollieren zu können.
 
 ### Inhaltsverzeichnis
 <!--ts-->
@@ -11,7 +11,7 @@ Zusaetzlich sollte ein Nutzer in der Laage sein Sprachbefehle an den Turtlesim w
    * [Hinweise | Anmerkungen](https://github.com/C-Sahin/VOSK-ROS#hinweise--anmerkungen)
    * [Probleme](https://github.com/C-Sahin/VOSK-ROS#Probleme)
    * [Startanweisung](https://github.com/C-Sahin/VOSK-ROS#Startanweisung)
-   * [Ausführbare Befehle ](https://github.com/C-Sahin/VOSK-ROS#ausf%C3%BChrbare-befehle)
+   * [Ausführbare Sprachbefehle ](https://github.com/C-Sahin/VOSK-ROS#ausf%C3%BChrbare-sprachbefehle)
 <!--te-->
 
 ### Umgebung
@@ -29,10 +29,10 @@ Zusaetzlich sollte ein Nutzer in der Laage sein Sprachbefehle an den Turtlesim w
 
 
 ### Hinweise | Anmerkungen
-1. um Python 3.9 verwenden zu koennen musste "export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages" aus der .bashrc entfernt  oder per "unset PYTHONPATH" im Terminal ausgeblendet werden. Wenn Python 2.7 dist-packages geladen sind funktioniert ROSCORE und ROSPY nicht, da diese eine enum Alternative aus Python 3.9 verwenden.
+1. um Python 3.9 verwenden zu können musste "export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages" aus der .bashrc entfernt  oder per "unset PYTHONPATH" im Terminal ausgeblendet werden. Wenn Python 2.7 dist-packages geladen sind funktioniert ROSCORE und ROSPY nicht, da diese eine enum Alternative aus Python 3.9 verwenden.
 
 ### Probleme
-1. Turtle "Gehe zu" Befehl kann in den Ecken haengen bleiben wenn nicht genug Platz fuer die Drehung gelassen wird  (z.B. X,Y:11,11 -> X,Y:11:0).
+1. Turtle "Gehe zu" Befehl kann in den Ecken hängen bleiben wenn nicht genug Platz fuer die Drehung gelassen wird  (z.B. X,Y:11,11 -> X,Y:11:0).
 2. Turtle "Gehe zu" Befehl ignoriert negative Koordiaten. bzw. "parsed" das Minuszeichen nicht.
 3. Die Turtle ist in der Lage zu Koordinaten zu gehen welche rationale Zahlen beinhalten, jedoch erlaubt der Befehl "Gehe zu" nur Natürliche Zahlen.
 
@@ -48,9 +48,9 @@ Zusaetzlich sollte ein Nutzer in der Laage sein Sprachbefehle an den Turtlesim w
 ![RQT_Graph](/img/rosgraph.png)
 
 
-### Ausführbare Befehle 
-1. Rechts - Drehung nach rechts um 90 Grad
-2. Links - Drehung nach links um 90 Grad
-3. Vorwärts - Ein "Schritt" gerade aus
-4. Rückwärts - Ein "Schritt" Rückwärts
-5. Gehe zu *X* *Y* - Gehe zur Koordinate X, Y.  W = {X,Y ∈ ℕ | 1 ≤ X,Y ≤ 9}
+### Ausführbare Sprachbefehle 
+1. 'Rechts' - Drehung nach rechts um 90 Grad
+2. 'Links' - Drehung nach links um 90 Grad
+3. 'Vorwärts' - Ein "Schritt" gerade aus
+4. 'Rückwärts' - Ein "Schritt" Rückwärts
+5. 'Gehe zu *X* *Y*' - Gehe zur Koordinate X, Y.  W = {X,Y ∈ ℕ | 1 ≤ X,Y ≤ 9} (Logik sucht nach den Keywords "Gehe zu" und wählt die erste erwähnte Zahl danach als *X* und die zweite Zahl als *Y* aus. Verkettete Anweisungen aus den Befehlen 1. bis 5. sind möglich)
