@@ -5,7 +5,7 @@ Zusätzlich sollte ein Nutzer in der Lage sein Sprachbefehle an den Turtlesim we
 
 ### Inhaltsverzeichnis
 <!--ts-->
-   * [VOSK-ROS](https://github.com/C-Sahin/VOSK-ROS#VOSK-ROS)
+   * [Sprachsteuerung-Turtlesim](https://github.com/C-Sahin/VOSK-ROS#Sprachsteuerung-Turtlesim)
    * [Inhaltsverzeichnis](https://github.com/C-Sahin/VOSK-ROS#Inhaltsverzeichnis)
    * [Umgebung](https://github.com/C-Sahin/VOSK-ROS#Umgebung)
    * [Hinweise | Anmerkungen](https://github.com/C-Sahin/VOSK-ROS#hinweise--anmerkungen)
