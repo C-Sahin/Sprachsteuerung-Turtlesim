@@ -1,8 +1,0 @@
-prefix=/home/sahin/catkin_ws/src/vosk_ros/build/devel
-
-Name: vosk_ros
-Description: Description of vosk_ros
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
