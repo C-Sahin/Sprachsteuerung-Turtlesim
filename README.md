@@ -1,5 +1,5 @@
-# VOSK-ROS
-VOSK-ROS ist ein ROS Package, welches im Rahmen eines Praktikums im Wintersemester 2021 an der Technischen Hochschule Georg Agricola entwickelt wurde.
+# Sprachsteuerung-Turtlesim
+Sprachsteuerung-Turtlesim ist ein ROS Package, welches im Rahmen eines Praktikums im Wintersemester 2021 an der Technischen Hochschule Georg Agricola entwickelt wurde.
 Die Aufgabe bestand darin, durch Spracherkennung, Sprache in Text umzunwandeln und durch TextToSpeech, Text in Sprache umzuwandeln.
 Zusätzlich sollte ein Nutzer in der Lage sein Sprachbefehle an den Turtlesim weiterzugeben, um diesen Kontrollieren zu können.
 
