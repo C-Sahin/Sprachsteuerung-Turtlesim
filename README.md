@@ -35,6 +35,7 @@ Zusätzlich sollte ein Nutzer in der Lage sein Sprachbefehle an den Turtlesim we
 1. Turtle "Gehe zu" Befehl kann in den Ecken hängen bleiben wenn nicht genug Platz fuer die Drehung gelassen wird  (z.B. X,Y:11,11 -> X,Y:11:0).
 2. Turtle "Gehe zu" Befehl ignoriert negative Koordiaten. bzw. "parsed" das Minuszeichen nicht.
 3. Die Turtle ist in der Lage zu Koordinaten zu gehen welche rationale Zahlen beinhalten, jedoch erlaubt der Befehl "Gehe zu" nur Natürliche Zahlen.
+4. Siehe [Issue #1](https://github.com/C-Sahin/Sprachsteuerung-Turtlesim/issues/1)
 
 
 ### Startanweisung
