@@ -58,8 +58,10 @@ args = parser.parse_args(remaining)
 try:
     talker()
     if args.model is None:
+        #Gehe ein Ordner zurueck
+        cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"..")))
+        os.chdir(cmd_subfolder)
         args.model = "model"
-        os.chdir("/home/sahin/catkin_ws/src/vosk_ros/src") #temporary #TODO
     if not os.path.exists(args.model):
         print ("Please download a model for your language from https://alphacephei.com/vosk/models")
         print ("and unpack as 'model' in the current folder.")
