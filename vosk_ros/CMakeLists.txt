@@ -207,7 +207,7 @@ include_directories(
 catkin_install_python(PROGRAMS src/vosk_sr_ros.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
-catkin_install_python(PROGRAMS src/listener_tts.py
+catkin_install_python(PROGRAMS src/mediator_tts.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 catkin_install_python(PROGRAMS src/mediator_turtle_sim.py
